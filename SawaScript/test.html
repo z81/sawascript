@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+string code 
+    val a= 1
+
+tokenize
+    [VAL 'val'][WHITESPACE ' '][VARNAME 'a'][EQUAL '='][WHITESPACE ' '][NUMBERLITERAL '1']
+
+token pos = token + pos + value
+
+type Rule = {
+    name: string
+    level: int
+    optional: bool
+    children: Rule RuleChildren
+}
+
+let VariableDeclaration = Rule "VariableDeclaration" [
+    Or [ Consume VAR; Consume VAL ]
+    Consume WHITESPACE
+    Consume VARNAME |> Level 1
+    Consume WHITESPACE |> Optional
+    Consume EQUAL
+    Consume WHITESPACE |> Optional
+    Consume NUMBERLITERAL |> Level 1
+]
+
+
+
+
+
+ast
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "ad258519cfe139b3abcb47a7f48b8db931c51bee"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "SawaScript/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Streams": "0.5.0",
+          "Streams.CSharp": "0.5.0"
+        },
+        "runtime": {
+          "SawaScript.dll": {}
+        }
+      },
+      "FSharp.Core/4.5.2": {
+        "runtime": {
+          "lib/netstandard1.6/FSharp.Core.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "2018.7.27.2"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.6/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.6/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.6/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/netstandard1.6/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.6/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.6/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.6/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.6/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.6/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.6/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.6/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Streams/0.5.0": {
+        "dependencies": {
+          "FSharp.Core": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Streams.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      },
+      "Streams.CSharp/0.5.0": {
+        "dependencies": {
+          "Streams": "0.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Streams.CSharp.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SawaScript/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSharp.Core/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pe3EDp9oBjQ3c3fvZAJsw7XFLHECS3zn3P7MSqsJy3sFYR6jvTgxxnCFeePR1JHiWyZ3bm+RZAjchqVYk61adA==",
+      "path": "fsharp.core/4.5.2",
+      "hashPath": "fsharp.core.4.5.2.nupkg.sha512"
+    },
+    "Streams/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h4r7OUNddbf8SRxCPzcXWTk3jOkg3StJ2lAEU+ijVIQTjnl4vqTWOTw1AY48dPBvV2B3xZzmxUwagRJG/kEblw==",
+      "path": "streams/0.5.0",
+      "hashPath": "streams.0.5.0.nupkg.sha512"
+    },
+    "Streams.CSharp/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zu5Xw0SWSWoaFJVsalksrfCsn38D77I012J4DcpVWHYM3sfDH+4ecgr/3TC9qCW74voMD7081DxU59ZDPDtQdg==",
+      "path": "streams.csharp/0.5.0",
+      "hashPath": "streams.csharp.0.5.0.nupkg.sha512"
+    }
+  }
+}
