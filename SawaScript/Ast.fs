@@ -23,6 +23,16 @@ type VariableDeclaration = {
 }
 
 
+type 'a NodeChildren =
+    | NodeValue of VariableDeclaration
+    | NodeList of 'a list
+
+
+type Node = {
+    children: Node NodeChildren
+}
+    
+
 let parseVarDeclr (p: ParserResult) =
     match p.children with
     | ParseResultList t->
@@ -45,11 +55,13 @@ let parseVarDeclr (p: ParserResult) =
             }
         }
 
-let ast (parseResult: ParserResult[]) =
+let ast (parseResult: ParserResult[][]) =
     parseResult |> Array.map (fun v ->
-        match v.rule.name with
-        | "VariableDeclaration" ->
-            let r = parseVarDeclr v
-            
-            r
+        Array.map (fun z ->
+            match z.rule.name with
+            | "VariableDeclaration" ->
+            {
+                children = NodeValue(parseVarDeclr z)
+            }    
+        )
     ) 

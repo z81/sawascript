@@ -1,0 +1,34 @@
+### Windows ###
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### F# ###
+lib/debug
+lib/release
+Debug
+*.suo
+*.user
+obj
+bin
+*.exe
+
+.idea
